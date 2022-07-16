@@ -1,0 +1,58 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: url('../images/login_bg.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.LoginAndReg {
+    position: absolute;
+    width: 400px;
+    height: 310px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: pink;
+}
+
+.LoginAndReg .title-box {
+    height: 60px;
+    background: url('../images/login_title.png') no-repeat center;
+}
+
+.layui-form {
+    padding: 0 30px;
+}
+
+.reg-box {
+    display: none;
+}
+
+
+/* 去注册和去登录右对齐 */
+
+.LoginAndReg .link {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+}
+
+
+/* icon图标 */
+
+.layui-form-item {
+    position: relative;
+}
+
+.layui-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.layui-input {
+    padding: 0 32px;
+}
