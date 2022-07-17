@@ -1,3 +1,4 @@
+//登录和注册
 $(function() {
     //去注册
     $('#link-reg').on('click', function() {
@@ -60,7 +61,7 @@ $(function() {
                 if (res.status !== 0) return layer.msg('登陆失败')
                 layer.msg('登陆成功')
                     // 将登录成功得到的 token 字符串，保存到 localStorage 中
-                localStorage.getItem('token', res.token)
+                localStorage.setItem('token', res.token)
                     // 跳转到后台主页
                 location.href = '../index.html'
             }
