@@ -31,6 +31,7 @@ function getUserInfo() {
                 return layui.layer.msg('获取用户信息失败! ')
             }
             // 调用 renderAvatar 渲染用户的头像
+            // console.log(res)
             renderAvater(res.data)
         },
         // 不论成功还是失败，最终都会调用 complete 回调函数
